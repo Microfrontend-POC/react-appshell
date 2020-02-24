@@ -1,0 +1,30 @@
+@import "../../variable";
+
+$header-background: map-get($colors, "primary");
+
+.App {
+  display: grid;
+  grid-template-rows: 50px auto;
+  grid-template-columns: 220px auto;
+  height: 100%;
+
+  &-header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background: $header-background;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  &-sidebar {
+    background: darken($header-background, 10);
+    color: #fff;
+    padding: 0 10px;
+  }
+
+  &-content {
+    padding: 10px;
+  }
+}
