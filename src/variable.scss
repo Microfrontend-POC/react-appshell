@@ -5,6 +5,6 @@ $colors: (
 
 :root {
   @each $name, $color in $colors {
-    --color-#{$name}: $color;
+    --color-#{$name}: #{$color};
   }
 }
